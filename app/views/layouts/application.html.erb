@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= yield(:title) %></title>
+  <title>Kevin Dinkel</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= javascript_include_tag "hoverIntent" %>
+  
+
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37403873-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
 </head>
 <body>
 
+<aside class="pageimage">
+<img src="/assets/me_white.png" alt="Me." width="245" />
+</aside>
+
+<nav>
+<ul>
+<li><%= link_to 'Me', '/' %></li>
+<li><%= link_to 'Resume', '/resume' %></li>
+<li><%= link_to 'Projects', '/projects' %></li>
+<!-- <li><%= link_to 'Papers', '/papers' %></li>
+<li><%= link_to 'Wine', '/wine' %></li>
+<li><%= link_to 'Contact', '/contact' %></li> -->
+</ul>
+</nav>
+
+<section class="pagecontent">
+<header>
+<h1>Theraccouns Home Page<%= addColon(yield(:title)) %> <text style="color:#6F6F6F"><%= yield(:title) %></text></h1>
+</header>
+
 <%= yield %>
+
+</section>
 
 </body>
 </html>
