@@ -1,8 +1,9 @@
 MyPage::Application.routes.draw do
-  get "static_pages/home"
 
-  get "static_pages/help"
-  get "static_pages/about"
+  root  to: 'static_pages#home'
+  match '/resume',   to: 'static_pages#resume'
+  match '/projects', to: 'static_pages#projects'
+  match '/papers',   to: 'static_pages#papers'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
