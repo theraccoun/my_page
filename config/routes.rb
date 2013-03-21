@@ -4,6 +4,7 @@ MyPage::Application.routes.draw do
   match '/resume',   to: 'static_pages#resume'
   match '/projects', to: 'static_pages#projects'
   match '/papers',   to: 'static_pages#papers'
+  match '/contact',  to: 'static_pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
