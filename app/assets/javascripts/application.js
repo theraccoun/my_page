@@ -15,7 +15,6 @@
 //= require jquery-ui.min
 //= require jquery_ujs
 //= require bootstrap
-//= require_tree .
 
 $(document).ready( function() {
 
