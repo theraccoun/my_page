@@ -5,6 +5,8 @@ gsop.pdf: gsop-7c8d8c51236cf679b2f164469fbf8abf.pdf
 gsop/index.pdf: gsop-7c8d8c51236cf679b2f164469fbf8abf.pdf
 resume.pdf: resume-7abcd5ca6c1928979705f49e7aaa4d4f.pdf
 resume/index.pdf: resume-7abcd5ca6c1928979705f49e7aaa4d4f.pdf
+3d-runner.jpg: 3d-runner-b1cb2f4440ab5fd28e8998ebedd77734.jpg
+3d-runner/index.jpg: 3d-runner-b1cb2f4440ab5fd28e8998ebedd77734.jpg
 Plasma-Tree.jpg: Plasma-Tree-2918d5812fa322b0e0f06c8640a5acb4.jpg
 Plasma-Tree/index.jpg: Plasma-Tree-2918d5812fa322b0e0f06c8640a5acb4.jpg
 physics3D.jpg: physics3D-3ba01882ee9332628cb71c4b9c5483fa.jpg
@@ -17,6 +19,8 @@ rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 readericon.png: readericon-6659d5d5df3a1c80c77af13de99a3cd8.png
 readericon/index.png: readericon-6659d5d5df3a1c80c77af13de99a3cd8.png
+spinning-thing.jpg: spinning-thing-f9b3fbee89760cf120ece52df7976322.jpg
+spinning-thing/index.jpg: spinning-thing-f9b3fbee89760cf120ece52df7976322.jpg
 yin-yang.jpg: yin-yang-99170842cd2a18f8059a271416c89b85.jpg
 yin-yang/index.jpg: yin-yang-99170842cd2a18f8059a271416c89b85.jpg
 application.js: application-90887d4df80c6c327a7b9cd4da2795b7.js
