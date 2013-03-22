@@ -1,1 +1,307 @@
 @import "bootstrap";
+body { padding-top: 60px; }
+@import "bootstrap-responsive";
+ 
+ // Place all the styles related to the static_pages controller here.
+ // They will automatically be included in application.css.
+ // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ $gray: #eaeaea;
+ $orange: #FFAD33;
+ $lightOrange: #FFD699;
+
+ em
+
+ i{font-style:italic}
+
+ strong{font-weight:bold}
+
+ a{text-decoration:none}
+
+ a:link{color:#009999}
+
+ a:visited{color:#000066}
+
+ a:hover{color:orange}
+
+ a:focus{text-decoration:underline;color:LightSlateBlue}
+
+ a:active{color:#000}.center{text-align:center}
+
+ h1{font-size:30px;line-height:34px;font-weight:bold;padding:5px 0px;
+ 	-webkit-margin-before: 0.2em;
+ 	-webkit-margin-after: 0.2em;
+ }
+
+ h2{font-size:26px;line-height:30px;font-weight:bold;padding:5px 0px}
+
+ h3{font-size:22px;line-height:26px;font-weight:bold;padding:5px 0px}
+
+ p{margin:0;padding:5px 0px;text-align:justify}
+
+ ul{margin-left:0;padding-left:0.2em;list-style-type:circle;list-style-position:inside;list-style-image:none}
+
+ ul li{padding-left:0.8em}
+
+ ul.plain{list-style:none}
+
+ ul.plain li{list-style:none}
+
+ body
+ {
+ 	width:900px;
+ 	height:auto;
+ 	padding:3px;
+ 	border:0px solid gray;
+ 	margin-left:5%;
+ 	margin-top:50px;
+ 	float:none;
+ 	overflow:overlay;
+ 	font-family:"Trebuchet MS",Helvetica,sans-serif;
+ 	letter-spacing:normal;
+ 	word-spacing:normal;
+ 	text-align:center;
+ 	font-size:16px;
+ 	line-height:22px;
+ 	font-weight:normal
+ }
+
+ nav{
+ 	width:525px;
+ 	height:auto;
+ 	padding:3px 9px 3px 0px;
+ 	border:0 none;
+ 	margin:3px 9px 3px 0px;
+ 	float:right;
+ 	overflow:overlay;
+ 	text-align:right
+ }
+
+ nav ul{margin:0;padding:0}
+
+ nav ul li{display:inline;list-style:none;margin:0 5px 0;padding:0}
+
+ .pagecontent
+ {
+ 	width:625px;
+ 	height:auto;
+ 	padding:3px 3px 0 9px;
+ 	border-left:1px;
+ 	border-right:0;
+ 	border-top:0;
+ 	border-bottom:0;
+ 	border-style:solid;
+ 	margin:3px 9px 3px 0;
+ 	float:left;
+ 	//overflow:overlay;
+ 	text-align:left
+ }
+
+ .pageimage{
+ 	width:auto;
+ 	height:auto;
+ 	padding:30px 0 0 3px;
+ 	border:0px 3px 3px 3px;
+ 	border-color:black;
+ 	margin:3px 0 30px 3px;
+ 	float:left;
+ 	text-align:center;
+ }
+
+ footer{
+ 	width:940px;
+ 	height:auto;
+ 	padding:30px;
+ 	border:0 none;
+ 	margin:3px;
+ 	clear:both;
+ 	overflow:overlay;
+ 	text-align:center;
+ 	font-size:13px;
+ 	line-height:19px;
+ 	font-weight:normal;
+ }
+
+ .projbox {
+ 	width:auto;
+ 	height:auto;
+ 	overflow:overlay;
+ 	border-radius: 10px;
+ 	padding:10px 3px 3px 3px;
+ 	position:relative;
+ 	margin:1px 0px 0px 1px;
+
+ 	background: $gray;
+ 	-webkit-transition-property: background;
+ 	-moz-transition-property: background;
+ 	-o-transition-property: background;
+ 	transition-property: background;
+ 	-webkit-transition-duration: 0.2s;
+ 	-moz-transition-duration: 0.2s;
+ 	-o-transition-duration: 0.2s;
+ 	transition-duration: 0.2s;
+ 	-webkit-transition-timing-function: linear;
+ 	-moz-transition-timing-function: linear;
+ 	-o-transition-timing-function: linear;
+ 	transition-timing-function: linear;
+ }
+
+ .projbox span {
+ 	width:100%;
+ 	height:100%;
+ 	position:absolute;
+ 	z-index:2;
+ 	top:0px;
+ 	left:0px;
+ }
+
+ .projbox:hover {
+ 	background: $orange;
+ }
+
+ .projimage {
+ 	float: left;
+ 	margin-left: 10px;
+ 	width: 100px;
+ 	background-color:none;
+ }
+
+ .projtitle {
+ 	float: left;
+ 	margin-left: 10px;
+ 	width: 490px;
+ 	background-color:none;
+ 	font: 18px bold;
+ 	font-family:"Trebuchet MS",Helvetica,sans-serif;
+ 	letter-spacing:normal;
+ 	word-spacing:normal;
+ 	text-align:left;
+ 	font-size:25px;
+ 	padding:20px 3px 3px 3px;
+ }
+
+ .projdescription {
+ 	float: left;
+ 	margin-left: 10px;
+ 	width: 470px;
+ 	background-color:none;
+ 	padding:3px 5px 5px 5px;
+ }
+
+ .find-me-at-container {
+ 	height: 40px;
+ 	width: 180px;
+ 	border-radius: 10px;
+ 	position: relative;
+
+ 	background: $gray;
+ 	-webkit-transition-property: background;
+ 	-moz-transition-property: background;
+ 	-o-transition-property: background;
+ 	transition-property: background;
+ 	-webkit-transition-duration: 0.2s;
+ 	-moz-transition-duration: 0.2s;
+ 	-o-transition-duration: 0.2s;
+ 	transition-duration: 0.2s;
+ 	-webkit-transition-timing-function: linear;
+ 	-moz-transition-timing-function: linear;
+ 	-o-transition-timing-function: linear;
+ 	transition-timing-function: linear;
+ }
+
+ .find-me-at-container span {
+ 	width:100%;
+ 	height:100%;
+ 	position:absolute;
+ 	z-index:2;
+ 	top:0px;
+ 	left:0px;
+ }
+
+ .find-me-at-container:hover {
+ 	background: $orange;
+ }
+
+ .find-me-at {
+ 	padding: 5px 5px 5px 5px;
+ }
+
+ .find-me-at-icon {
+ 	float: left;
+ 	padding: 5px 5px 5px 5px;
+ }
+
+
+ .find-me-at-label {
+ 	padding: 5px 5px 5px 5px;
+ 	float: center;
+ 	font: bold;
+ 	font-family:"Trebuchet MS",Helvetica,sans-serif;
+ 	letter-spacing:normal;
+ 	word-spacing:normal;
+ 	text-align:left;
+ 	font-size:18px;
+ }
+
+ .paper-container {
+ 	width:auto;
+ 	height:auto;
+ 	position:relative;
+ }
+
+ .paper-container span {
+ 	width:100%;
+ 	height:100%;
+ 	position:absolute;
+ 	z-index:2;
+ 	top:0px;
+ 	left:0px;
+ }
+
+ .paper-title-container {
+ 	height: 40px;
+ 	width: 100%;
+ 	border-radius: 10px;
+ 	position: relative;
+ 	margin: 5px 0px 0px 0px;
+
+ 	background: $gray;
+ }
+
+ .paper-title-container:hover {
+ 	background: $orange;
+ }
+
+ .paper-title {
+ 	padding: 10px 5px 5px 15px;
+ }
+
+ .paper-description-container {
+ 	display:none;
+ 	width:100%;
+ 	height:auto;
+ 	position:relative;
+ 	border-radius: 0px 0px 10px 10px;
+ 	background: $lightOrange;
+ }
+
+ .paper-description-image{
+ 	position:relative;
+ 	top:0px;
+ 	left:0px;
+ 	width: 100px;
+ 	height: 100px;
+ 	padding: 10px 5px 10px 10px;
+ 	//float: left;
+ }
+
+ .paper-description {
+ 	position:absolute;
+ 	top:0px;
+ 	left:120px;
+ 	color: #5E5E5E;
+ 	width: 490px;
+ 	padding: 10px 10px 10px 5px;
+ 	float: right;
+ }
+
