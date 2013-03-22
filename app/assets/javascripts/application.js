@@ -20,7 +20,7 @@
 $(document).ready( function() {
 
 $("#myCarousel").carousel({
-		interval: 2000
+		interval: 20000
 	});
 	
 });
