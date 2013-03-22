@@ -25,6 +25,4 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
-  gem 'newrelic_rpm' # site performance metrics
-  gem 'unicorn'      # http://collectiveidea.com/blog/archives/2012/11/26/setup-a-high-volume-site-on-heroku-for-free/
 end
