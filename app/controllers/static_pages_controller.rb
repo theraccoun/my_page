@@ -8,15 +8,6 @@ class StaticPagesController < ApplicationController
   def projects
   end
   
-  def papers
-  end
-  
-  def wine
-  end
-
-  def links
-  end
-  
   def contact
   end
 end
