@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>smaccoun</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  
+	<title>smaccoun</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" %>
+	<%= javascript_include_tag "application" %>
 
-  <link rel="shortcut icon" href="/assets/favicon.ico" />
 
-  <script type="text/javascript">
+	<link rel="shortcut icon" href="/assets/favicon.ico" />
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37403873-1']);
-  _gaq.push(['_trackPageview']);
+	<script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-37403873-1']);
+	_gaq.push(['_trackPageview']);
 
-  </script>
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	</script>
 
 </head>
+
 <body>
 
-<aside class="pageimage">
-<img src="/assets/raccoon-standing.jpg" alt="Raccoon" width="245" />
-</aside>
+	<aside class="pageimage">
+		<img src="/assets/raccoon-dancing.jpg" alt="Raccoon" width="245" />
+	</aside>
 
-<nav>
-<ul>
-<li><%= link_to 'Me', root_path %></li>
-<li><%= link_to 'Resume', '/resume' %></li>
-<li><%= link_to 'Projects', '/projects' %></li>
-<li><%= link_to 'Contact', '/contact' %></li>
-</ul>
-</nav>
+	<nav>
+		<ul>
+			<li><%= link_to 'Me', root_path %></li>
+			<li><%= link_to 'Resume', '/resume' %></li>
+			<li><%= link_to 'Projects', '/projects' %></li>
+			<li><%= link_to 'Contact', '/contact' %></li>
+		</ul>
+	</nav>
 
-<section class="pagecontent">
-<header>
-<h1>Theraccoun's Home Page<%= addColon(yield(:title)) %> <text style="color:#6F6F6F"><%= yield(:title) %></text></h1>
-</header>
+	<div class="pagecontent">
+		<header>
+			<h1>Theraccoun's Home Page<%= addColon(yield(:title)) %> <text style="color:#6F6F6F"><%= yield(:title) %></text></h1>
+		</header>
 
-<%= yield %>
+		<%= yield %>
 
-</section>
+	</div>
 
 </body>
 </html>
