@@ -18,8 +18,38 @@
 
 $(document).ready( function() {
 
-$("#myCarousel").carousel({
-		interval: 20000
+	$("#myCarousel").carousel({
+			interval: 20000
+		});
+
+	$(function() {
+
+	    var $el, leftPos, newWidth,
+	        $mainNav = $("#example-one");
+	    
+	    $mainNav.append("<li id='magic-line'></li>");
+	    var $magicLine = $("#magic-line");
+	    
+	    $magicLine
+	        .width($(".current_page_item").width())
+	        .css("left", $(".current_page_item").position().left)
+	        .data("origLeft", $magicLine.position().left)
+	        .data("origWidth", $magicLine.width());
+	        
+	    $("#example-one li").hover(function() {
+	        $el = $(this);
+	        leftPos = $el.position().left;
+	        newWidth = $el.width();
+	        $magicLine.stop().animate({
+	            left: leftPos,
+	            width: newWidth
+	        });
+	    }, function() {
+	        $magicLine.stop().animate({
+	            left: $magicLine.data("origLeft"),
+	            width: $magicLine.data("origWidth")
+	        });    
+	    });
 	});
 	
 });

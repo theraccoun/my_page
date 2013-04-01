@@ -23,10 +23,10 @@ spinning-thing.jpg: spinning-thing-f9b3fbee89760cf120ece52df7976322.jpg
 spinning-thing/index.jpg: spinning-thing-f9b3fbee89760cf120ece52df7976322.jpg
 yin-yang.jpg: yin-yang-99170842cd2a18f8059a271416c89b85.jpg
 yin-yang/index.jpg: yin-yang-99170842cd2a18f8059a271416c89b85.jpg
-application.js: application-90887d4df80c6c327a7b9cd4da2795b7.js
-application/index.js: application-90887d4df80c6c327a7b9cd4da2795b7.js
-application.css: application-355eb1f07c19a00c3dad774d630938b4.css
-application/index.css: application-355eb1f07c19a00c3dad774d630938b4.css
+application.js: application-46cb64782b716284473d4732b38894bd.js
+application/index.js: application-46cb64782b716284473d4732b38894bd.js
+application.css: application-d5bcdb50f8523800f8d56f881829948c.css
+application/index.css: application-d5bcdb50f8523800f8d56f881829948c.css
 jquery-ui/animated-overlay.gif: jquery-ui/animated-overlay-602eee4c79a4796b02bb6442948c9e28.gif
 jquery-ui/animated-overlay/index.gif: jquery-ui/animated-overlay-602eee4c79a4796b02bb6442948c9e28.gif
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-7d1197a52442bc56fcad60d0390f4b32.png
